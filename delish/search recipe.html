@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Delish || Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="home.html" class="nav-logo">
+            <img src="./images/logo.png" alt="Delish" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="home.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="menu.html" class="nav-link"> menu </a>
+          <a href="http://localhost:1000/" class="nav-link">Search</a>
+          <a href="http://localhost:4000/" class="nav-link"> blogs </a>
+          <a href="slide.html" class="nav-link"> recipes </a>
+          
+        </div>
+      </div>
+    </nav>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid rgb(21, 85, 124);
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid rgb(10, 9, 9);
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #e4c2c2;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: burlywood;
+}
+</style>
+</head>
+<body>
+
+<h1><center>RECIPE BOOK</center></h1>
+
+<h1><label for="food-names">Choose a type of cuisuine:</label>
+<select name="food-names" id="food-names">
+    <option value="italian">Italian</option>
+  <option value="chinese">Chinese</option>
+  <option value="indian">Indian</option>
+  <option value="mexican">Mexican</option>
+  <option value="french">French</option>
+  <option value="japanese">Japanese</option>
+</h1>
+
+</select>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Bruschetta</a></li>
+  <li><a href="#">Okonomiyaki</a></li>
+  <li><a href="#">Kosha Mangsho</a></li>
+  <li><a href="#">Chow Mein</a></li>
+  <li><a href="#">Potatoes Dauphinoise</a></li>
+  <li><a href="#">Flamiche aux Poireaux</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

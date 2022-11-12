@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delish || Contact</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="C:\Users\91739\OneDrive\Desktop\delish website\contact.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="home.html" class="nav-logo">
+            <img src="./images/logo.png"/>
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <div class="nav-links">
+            <a href="home.html" class="nav-link"> home </a>
+            <a href="about.html" class="nav-link"> about </a>
+            <a href="menu.html" class="nav-link"> menu </a>
+            <a href="http://localhost:1000/" class="nav-link">Search</a>
+            <a href="http://localhost:4000/" class="nav-link"> blogs </a>
+            <a href="slide.html" class="nav-link"> recipes </a>
+          <div class="signup-link">
+            <a href="signup.html" class="btn"> Sign Up </a>
+          </div>
+          <div class="nav-link contact-link">
+            <a href="http://localhost:2000/contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="page">
+     <section class="contact-container">
+          <article class="contact-info">
+            <h3>Want To Get In Touch?</h3>
+            <p>
+              If you have any suggestions, recipe ideas or queries send a message here.
+            </p>
+            <p>Post your best recipes in our blog posts for others to try and get inspired!</p>
+            <p>
+              Queries and suggestions will be looked onto it daily.
+            </p>
+          </article>
+          <article>
+            <form class="form contact-form" method="post" action="/contact1">
+              <div class="form-row">
+                <label html="name" class="form-label">Name:</label>
+                <input type="name" name="name" id="name" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="email" class="form-label">Email:&nbsp;</label>
+                <input type="email" name="email" id="email" class="form-input" />
+              </div>
+              <div class="form-row">
+                <label html="message" class="form-label">Message:</label>
+                <textarea name="message" id="message" class="form-textarea"></textarea>
+              </div>
+              &nbsp;
+              &nbsp;
+              <button type="submit" class="btn btn-block">
+                submit
+              </button>
+            </form>
+          </article>
+        </section>
+       <section class="featured-recipes">
+        <h3><center>Look At This Awesomesouce!</center></h3>
+        <div class="recipes-list">
+          <a href="ir1-recipe.html" class="recipe">
+            <img
+              src="./images/recipes/ir1.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Bruschetta (Italian)</h5>
+            <p>Prep : 15min | Cook : 25min</p>
+          </a>
+          <a href="cr1-recipe.html" class="recipe">
+            <img
+              src="./images/recipes/cr1.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Spicy Tofu (Chinese)</h5>
+            <p>Prep : 15min | Cook : 10min</p>
+          </a>
+          <a href="mr1-recipe.html" class="recipe">
+            <img
+              src="./images/recipes/mr1.jpg"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Chilaquiles (Mexican)</h5>
+            <p>Prep : 10min | Cook : 15min</p>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
