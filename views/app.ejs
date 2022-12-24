@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <title>Delish || Blogs</title>
+    <link rel="stylesheet" href="/delish/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="/delish/style1.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="/delish/home.html" class="nav-logo">
+            <img src="/delish/images/logo.png">
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="http://localhost:4000/delish/home.html" class="nav-link"> home </a>
+          <a href="http://localhost:4000/delish/about.html" class="nav-link"> about </a>
+          <a href="http://localhost:4000/delish/menu.html" class="nav-link"> menu </a>
+          <a href="http://localhost:1000/" class="nav-link"> search </a>
+          <a href="http://localhost:4000/" class="nav-link"> blogs </a>
+          <a href="http://localhost:4000/delish/slide.html" class="nav-link"> recipes </a>
+          <div class="nav-link contact-link">
+            <a href="http://localhost:2000/contact.html" class="btn"> contact </a>
+          </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="card">
+        <div class="card__header">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/7/30/0/wu0303h_cinnamon-baked-french-toast-with-blueberries_s4x3.jpg.rend.hgtvcom.966.725.suffix/1485880483811.jpeg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-brown"><h4>&nbsp; Food &nbsp;</h4></span>
+          <h4>Cinnamon Baked French Toast</h4>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <div class="user__info">
+              <h5>Jony Doe</h5>
+              <small>Yesterday</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/10/18/BX1505_Chicken-Thighs-with-Creamy-Mustard-Sauce_s4x3.jpg.rend.hgtvcom.966.725.suffix/1539886516398.jpeg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-brown"><h4>&nbsp; Food &nbsp;</h4></span>
+          <h4>Alfredo Dinner</h4>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <div class="user__info">
+              <h5>Akshitha</h5>
+              <small>Today</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/1/07/0/FNK_Chicken-Tortilla-Dump-Dinner_s4x3.jpg.rend.hgtvcom.966.725.suffix/1546896090334.jpeg" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-brown"><h4>&nbsp; Food &nbsp;</h4></span>
+          <h4>Bucatini al Limone</h4>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <div class="user__info">
+              <h5>Harini</h5>
+              <small>Yesterday</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="container">
+      <br>
+      <br>
+        <h1>CREATE YOUR OWN BLOG:</h1>
+        <hr>
+        
+        &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+        <div class="container">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Blog Title:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="name" placeholder="Name" value="" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="desc">Blog Description:</label>
+                    <textarea class="form-control" id="desc" name="desc" value="" rows="2" placeholder="Description"
+                        required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">Upload Image:</label>
+                    <input type="file" class="form-control-file" id="image" name="image" value="" required>
+                </div>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <div style="display: flex;" class="blog-link">
+                    <button type="submit" class="btn btn-primary" style="margin: auto;">POST BLOG</button>
+                    
+                </div>
+            </form>
+        </div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+    <br>
+    <hr>
+       
+        <h1>YOUR BLOGS:</h1>
+        <div class="row">
+            <% items.forEach(function(image) { %>
+              <div class="card">
+                <div class="card__header">
+                    <img src="data:image/<%=image.img.contentType%>;base64,<%=image.img.data.toString('base64')%>"
+                        class="card-img-top img-thumbnail" alt="...">
+                        <div class="card__body">
+                        <h1 class="card-title"><center><%= image.name %></center></h1>
+                        <div class="card__footer">
+                          <div class="user">
+                        <h3 class="card-text"><center><%= image.desc %></center></h3>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</body>
+
+</html>

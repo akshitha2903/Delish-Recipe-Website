@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Delish || Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <style>
+      body { 
+      background: linear-gradient(white,rgb(141, 207, 229)) no-repeat fixed center; 
+    }</style>
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="home.html" class="nav-logo">
+            <img src="logo.png" alt="Delish" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="http://localhost:4000/delish/home.html" class="nav-link"> home </a>
+          <a href="http://localhost:4000/delish/about.html" class="nav-link"> about </a>
+          <a href="http://localhost:4000/delish/menu.html" class="nav-link"> menu </a>
+          <a href="http://localhost:1000/" class="nav-link"> search </a>
+          <a href="http://localhost:4000/" class="nav-link"> blogs </a>
+          <a href="http://localhost:4000/delish/slide.html" class="nav-link"> recipes </a>
+          <div class="nav-link contact-link">
+            <a href="http://localhost:2000/contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1><center>RECIPES SEARCH</center></h1>
+    <center>
+    <form method="post">
+      <input type="text" size="30" onkeyup="showResult(this.value)" />
+      <div id="livesearch" class="hide"></div>
+    </form>
+  </center>
+    <script src="search.js"></script>
+  </body>
+</html>
